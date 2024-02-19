@@ -1,0 +1,93 @@
+:root {
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --itemCardColor: hsl(120, 5%, 88%);
+    --itemCardHover: hsl(120, 27%, 87%);
+    --biggestFont: 2.5rem;
+    --h1Font: 1.5rem;
+    --h2Font: 1.25rem;
+    --h3Font: 1rem;
+    --normalFont: .938rem;
+    --smallFont: .813rem;
+    --smallestFont: .75rem;
+  }
+  
+  .listing {
+    flex-basis: 70%;
+  }
+  .listing .heading {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .listing .heading h1 {
+    font-size: var(--h2Font);
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .listing .heading .btn {
+    border: 1px solid transparent;
+    font-weight: 500;
+  }
+  .listing .heading .btn:hover {
+    border: 1px solid var(--PrimaryColor);
+  }
+  .listing .containerApp {
+    width: 100%;
+    margin: 1rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .listing .containerApp .singleItem {
+    position: relative;
+    width: 200px;
+    height: 237px;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--itemCardColor);
+  }
+  .listing .containerApp .singleItem:hover {
+    background-color: var(--itemCardHover);
+    box-shadow: 0 2px 2px var(--inputColor);
+  }
+  .listing .containerApp .singleItem img {
+    max-width: 160px;
+  }
+  .listing .containerApp .singleItem .icon {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    color: var(--PrimaryColor);
+  }
+  .listing .containerApp .singleItem h3 {
+    font-size: var(--h3Font);
+    padding: 1rem 0;
+    color: var(--blackColor);
+    text-align: center;
+  }
+  .listing .containerApp .pagination .active {
+    background-color: #bdf094 !important;
+  }
+
+
+  .active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: var(--PrimaryColor)!important;
+    border-color: var(--PrimaryColor)!important;
+  }
+
+  .page-link{
+    color:black!important;
+  }

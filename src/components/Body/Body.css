@@ -1,0 +1,21 @@
+.mainContent {
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    width: 82%;
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+  }
+  .mainContent .bottom {
+    margin-top: 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .mainContent::-webkit-scrollbar {
+    display: none;
+  }
+  .mainContent h2 {
+    font-size: var(--h2Font);
+    color: var(--PrimaryColor);
+  }

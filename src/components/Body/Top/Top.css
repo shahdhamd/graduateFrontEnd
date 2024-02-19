@@ -1,0 +1,327 @@
+:root {
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --biggestFont: 2.5rem;
+    --h1Font: 1.5rem;
+    --h2Font: 1.25rem;
+    --h3Font: 1rem;
+    --normalFont: .938rem;
+    --smallFont: .813rem;
+    --smallestFont: .75rem;
+  }
+  
+  .top .Topheader {
+    justify-content: space-between;
+  }
+  .top .Topheader .title h1 {
+    font-size: var(--h1Font);
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .top .Topheader .title p {
+    font-size: var(--normalFont);
+    color: var(--textColor);
+    font-weight: 500;
+  }
+  .top .Topheader .searchBar {
+    padding: 1rem 2rem;
+    background-color: var(--whiteColor);
+    border-radius: 5px;
+    gap: 1rem;
+    box-shadow: 0 2px 4px var(--inputColor);
+  }
+  .top .Topheader .searchBar input {
+    border: none;
+    outline: none;
+    background-color: none;
+  }
+  .top .Topheader .searchBar .icon {
+    color: var(--textColor);
+  }
+  .top .Topheader .searchBar .icon:hover {
+    color: var(--PrimaryColor);
+  }
+  .top .Topheader .adminDiv {
+    gap: 1rem;
+  }
+  .top .Topheader .adminDiv .icon {
+    font-size: var(--biggestFont);
+    background-color: var(--whiteColor);
+    padding: 5px;
+    box-shadow: 0 2px 4px var(--inputColor);
+    color: var(--textColor);
+  }
+  .top .Topheader .adminDiv .adminImage {
+    border: 3px solid var(--whiteColor);
+    border-radius: 10px;
+    width: 2.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px var(--inputColor);
+  }
+  .top .Topheader .adminDiv .adminImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .top .cardd {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  .top .cardd .rightCard {
+    position: relative;
+    flex-basis: 70%;
+    height: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .top .cardd .rightCard .videoDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .top .cardd .rightCard .videoDiv video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .top .cardd .rightCard h1, .top .cardd .rightCard p, .top .cardd .rightCard .btn {
+    z-index: 100;
+  }
+  .top .cardd .rightCard h1 {
+    font-size: var(--h1Font);
+    color: var(--whiteColor);
+    font-weight: 800;
+  }
+  .top .cardd .rightCard p {
+    padding: 1rem;
+    color: var(--paleGreen);
+    font-weight: 500;
+  }
+  .top .cardd .rightCard .buttons {
+    gap: 1rem;
+    z-index: 100;
+  }
+  .top .cardd .rightCard .buttons .btn {
+    box-shadow: none;
+    padding: 0.8rem 1.5rem;
+    color: var(--PrimaryColor);
+    border-radius: 20px solid transparent;
+    margin: 0px 5px;
+  }
+  .top .cardd .rightCard .buttons .transparent {
+    background: none;
+    border: 2px solid var(--paleGreen);
+    color: var(--paleGreen);
+  }
+  .top .cardd .rightCard .buttons .transparent:hover {
+    background-color: var(--paleGreen);
+    color: var(--PrimaryColor);
+  }
+  .top .cardd .leftCard {
+    flex-basis: 50%;
+  }
+  .top .cardd .leftCard .main {
+    position: relative;
+    height: 200px;
+    border-radius: 1rem;
+    justify-content: space-between;
+  }
+  .top .cardd .leftCard .main::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background-color: var(--paleGreen);
+    left: 0;
+    border-radius: 1rem;
+  }
+  .top .cardd .leftCard .main .textDiv {
+    z-index: 100;
+    padding: 5px;
+  }
+  .top .cardd .leftCard .main .textDiv h1 {
+    font-size: var(--h1Font);
+    padding-bottom: 1rem;
+    color: var(--blackColor);
+  }
+  .top .cardd .leftCard .main .textDiv .flex {
+    gap: 1.5rem;
+    font-weight: 500;
+    color: var(--blackColor);
+  }
+  .top .cardd .leftCard .main .textDiv .flex small {
+    font-size: var(--normalFont);
+    display: block;
+    color: var(--PrimaryColor);
+    font-weight: 500;
+    padding: 0.5rem 0;
+  }
+  .top .cardd .leftCard .main .textDiv .link {
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  .top .cardd .leftCard .main .textDiv .link:hover {
+    color: var(--PrimaryColor);
+  }
+  .top .cardd .leftCard .main .textDiv .link:hover .icon {
+    transform: translateX(10px);
+    transition: 0.1 ease;
+  }
+  .top .cardd .leftCard .main .imgDiv {
+    transform: translateY(-20px);
+  }
+  .top .cardd .leftCard .main .imgDiv img {
+    width: 200px;
+  }
+  .top .cardd .leftCard .siderBarCard {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+  }
+  .top .cardd .leftCard .siderBarCard .icon {
+    position: absolute;
+    background-color: var(--HoverColor);
+    border: 10px solid var(--whiteColor);
+    font-size: 3rem;
+    border-radius: 50%;
+    top: -8px;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 100;
+  }
+  .top .cardd .leftCard .siderBarCard .cardContent {
+    position: relative;
+    padding: 1rem;
+    background-color: var(--HoverColor);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .top .cardd .leftCard .siderBarCard .cardContent h3 {
+    font-size: var(--h3Font);
+    margin-top: 1rem;
+    padding: 1rem 0;
+    font-weight: 800;
+    color: var(--blackColor);
+  }
+  .top .cardd .leftCard .siderBarCard .cardContent p {
+    font-size: var(--normalFont);
+    color: var(--textColor);
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
+  .top .cardd .leftCard .siderBarCard .cardContent .btn {
+    position: relative;
+    color: var(--textColor);
+    z-index: 10000;
+  }
+  .top .cardd .leftCard .siderBarCard .cardContent .circle1, .top .cardd .leftCard .siderBarCard .cardContent .circle2 {
+    position: absolute;
+    background-color: var(--paleGreen);
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+  .top .cardd .leftCard .siderBarCard .cardContent .circle1 {
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    right: -50px;
+  }
+  .top .cardd .leftCard .siderBarCard .cardContent .circle2 {
+    height: 150px;
+    width: 150px;
+    bottom: -80px;
+    right: -70px;
+    z-index: 10;
+  }
+  
+  @media (max-width: 990px) {
+    .cardd {
+      flex-direction: column;
+    }
+    .cardd .rightCard, .cardd .leftCard {
+      width: 100%;
+      flex: basis 100% !important;
+    }
+    .cardd .leftCard {
+      align-self: flex-start;
+      height: 10px !important;
+      margin-top: 2rem;
+    }
+    .cardd .leftCard .main {
+      width: 100%;
+    }
+    .cardd .siderBarCard {
+      display: block;
+    }
+  }
+  @media (max-width: 990px) {
+    .Topheader .searchBar {
+      display: none;
+    }
+  }
+  @media (max-width: 724px) {
+    .card .leftCard .main {
+      width: 100%;
+    }
+    .card .leftCard .siderBarCard {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    .Topheader .adminDiv {
+      display: none !important;
+    }
+    .Topheader .title {
+      text-align: center;
+      margin: auto;
+    }
+    .card .rightCard {
+      text-align: center;
+    }
+    .card .rightCard .buttons {
+      margin: auto;
+      display: grid;
+    }
+    .card .leftCard .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card .leftCard .main .textDiv {
+      margin: auto;
+    }
+    .card .leftCard .main::before {
+      width: 100% !important;
+    }
+    .card .leftCard .main .imgDiv {
+      display: none;
+    }
+  }
+  @media (max-width: 400px) {
+    .top .card .rightCard {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .top .card .rightCard h1 {
+      font-size: var(--h2Font);
+    }
+  }

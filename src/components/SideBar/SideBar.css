@@ -1,0 +1,190 @@
+:root {
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --biggestFont: 2.5rem;
+    --h1Font: 1.5rem;
+    --h2Font: 1.25rem;
+    --h3Font: 1rem;
+    --normalFont: .938rem;
+    --smallFont: .813rem;
+    --smallestFont: .75rem;
+  }
+  
+  .SiderBar {
+    background-color: var(--whiteColor);
+    box-shadow: 1px 0px 4px var(--greyText);
+    height: 100%;
+    width: 18%;
+    gap: 3rem;
+    overflow: auto;
+  }
+  
+  .SiderBar .logoDiv {
+    padding: 1.5rem 1.5rem 0;
+    cursor: pointer;
+  }
+  
+  .SiderBar .logoDiv img {
+    max-width: 30px;
+    margin-right: 50%;
+    border-radius: 2px;
+    padding: 0;
+    background-color: var(--inputColor);
+  }
+  
+  .SiderBar .logoDiv h2 {
+    font-size: var(--h2Font);
+    color: var(--PrimaryColor);
+  }
+  
+  .menuDiv .divTitle, .settingsDiv .divTitle {
+    font-size: var(--h3Font);
+    color: var(--blackColor);
+    padding: 0 1.5rem 1.5rem;
+  }
+  .menuDiv .menuLists .listItem, .settingsDiv .menuLists .listItem {
+    padding: 0.2rem 1.5rem;
+    width: 100%;
+    position: relative;
+  }
+  .menuDiv .menuLists .listItem::before, .settingsDiv .menuLists .listItem::before {
+    position: absolute;
+    content: "";
+    height: 0%;
+    left: 0;
+    width: 5px;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--PrimaryColor);
+  }
+  .menuDiv .menuLists .listItem .menuLink, .settingsDiv .menuLists .listItem .menuLink {
+    color: var(--greyText);
+    font-weight: 500;
+    transition: 0;
+  }
+  .menuDiv .menuLists .listItem .menuLink .icon, .settingsDiv .menuLists .listItem .menuLink .icon {
+    margin-right: 0.5rem;
+  }
+  .menuDiv .menuLists .listItem:hover .menuLink, .settingsDiv .menuLists .listItem:hover .menuLink {
+    color: var(--PrimaryColor);
+    transition: 0;
+  }
+  .menuDiv .menuLists .listItem:hover::before, .settingsDiv .menuLists .listItem:hover::before {
+    height: 100%;
+    transition: 0.3s ease;
+  }
+  
+  .siderBarCard {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+  }
+  .siderBarCard .icon {
+    position: absolute;
+    background-color: var(--HoverColor);
+    border: 10px solid var(--whiteColor);
+    font-size: 3rem;
+    border-radius: 50%;
+    top: -8px;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 100;
+  }
+  .siderBarCard .cardContent {
+    position: relative;
+    padding: 1rem;
+    background-color: var(--HoverColor);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .siderBarCard .cardContent h3 {
+    font-size: var(--h3Font);
+    margin-top: 1rem;
+    padding: 1rem 0;
+    font-weight: 800;
+    color: var(--blackColor);
+  }
+  .siderBarCard .cardContent p {
+    font-size: var(--normalFont);
+    color: var(--textColor);
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
+  .siderBarCard .cardContent .btn {
+    position: relative;
+    color: var(--textColor);
+    z-index: 10000;
+  }
+  .siderBarCard .cardContent .circle1, .siderBarCard .cardContent .circle2 {
+    position: absolute;
+    background-color: var(--paleGreen);
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+  .siderBarCard .cardContent .circle1 {
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    right: -50px;
+  }
+  .siderBarCard .cardContent .circle2 {
+    height: 150px;
+    width: 150px;
+    bottom: -80px;
+    right: -70px;
+    z-index: 10;
+  }
+  
+  @media (max-width: 754px) {
+    .SiderBar .logoDiv {
+      text-align: center;
+      padding: 1.5rem 0.5rem 0;
+      margin: auto;
+    }
+    .SiderBar .logoDiv img {
+      max-width: 50px;
+      margin: 0;
+      border-radius: 10px;
+      padding: 0.5rem;
+    }
+    .SiderBar .logoDiv h2 {
+      display: none;
+    }
+    .SiderBar .menuDiv .divTitle, .SiderBar .menuDiv .smallText, .SiderBar .settingsDiv .divTitle, .SiderBar .settingsDiv .smallText {
+      display: none;
+    }
+    .SiderBar .menuDiv .menuLists .listItem .menuLink, .SiderBar .settingsDiv .menuLists .listItem .menuLink {
+      justify-content: center;
+    }
+    .SiderBar .menuDiv .menuLists .listItem .menuLink .icon, .SiderBar .settingsDiv .menuLists .listItem .menuLink .icon {
+      font-size: var(--h1Font);
+    }
+  }
+  @media (max-width: 390px) {
+    .SiderBar .menuDiv .menuLists .listItem, .SiderBar .settingsDiv .menuLists .listItem {
+      padding: 0.2rem 0.5rem;
+    }
+    .SiderBar .menuDiv .menuLists .listItem .menuLink, .SiderBar .settingsDiv .menuLists .listItem .menuLink {
+      justify-content: center;
+    }
+    .SiderBar .menuDiv .menuLists .listItem .menuLink .icon, .SiderBar .settingsDiv .menuLists .listItem .menuLink .icon {
+      font-size: var(--h2Font);
+    }
+  }
+  @media (max-width: 882px) {
+    .SiderBar {
+      overflow: hidden;
+    }
+    .siderBarCard {
+      display: none;
+    }
+  }

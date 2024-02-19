@@ -1,0 +1,115 @@
+.header {
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+    box-shadow: -20px 20px 0px rgb(82, 142, 37);
+}
+
+.header .image {
+    width: 40%;
+}
+
+.header .text {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 10px 30px;
+    direction: rtl;
+}
+
+.header p {
+    width: 80%;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.header h2::after {
+    content: '';
+    width: 30%;
+    height: 2px;
+    background-color: rgb(82, 142, 37);
+    display: block;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-right: 0;
+
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 913px) and (min-width: 767px) {
+    .header .image {
+        width: 55%;
+    }
+    .header .text {
+        width: 46%;
+    }
+    .header p {
+        width: 100%;
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 766px) and (min-width: 576px) {
+    .header .image {
+        width: 70%;
+    }
+    .header p {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .header .text{
+        width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    direction: rtl;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px 0;
+    }
+    .header .image {
+        margin: 20px 0;
+        width:70%;
+    }
+    .header .text {
+        margin: 20px 10px;
+        width:100%;
+    }
+    .header p {
+        width: 90%;
+        font-size: 16px;
+
+    }
+    .header h2{
+        text-align: center;
+    }
+    .header h2::after {
+        content: '';
+        width: 30%;
+        height: 2px;
+        background-color: rgb(82, 142, 37);
+        display: block;
+        margin: auto;
+    }
+}

@@ -1,0 +1,128 @@
+.home {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('../../../public/images/homepage.webp');
+  height: 90vh;
+  color: #616163;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 10%;
+}
+
+.hometext {
+
+  max-width: 40%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.hometext h1 span{
+  text-shadow: 5px 5px 10px #888888;
+  color:rgb(24, 126, 24);
+} 
+
+.hometext p {
+  width:100%;
+  font-size: 18px;
+  text-align: justify;
+  direction: rtl; 
+  padding-top: 20px;
+  padding-right: 10px;
+  font-weight: 100;
+}
+
+.hometext button{
+  background-color:rgba(24, 126, 24 ,0.8);
+  color:white;
+  border-radius: 1px solid rgb(167, 164, 164);
+  padding: 2px 40px;
+  font-size: 22px;
+  margin-right: -63%;
+  border-radius: 25px;
+}
+
+.hometext button i{
+  font-size: 20px;
+  padding: 0px 5px;
+}
+
+/*٧٦٨*/
+@media (max-width: 660px){
+    .home{
+      background-position: 100% 100%; 
+      display: flex;
+      justify-content: space-between;
+      text-shadow: 5px 5px 10px #030303;
+    }
+    .hometext{
+        width: 100%;
+
+    }
+    .hometext h1{
+      font-size: 27px;
+      width:200%;
+      text-align: center;
+      color:white;
+    }
+    
+    .hometext  p{
+    font-size: 16px;
+    text-align: center;
+    padding-right: 20px;
+    }
+    .hometext  p{
+      font-size: 18px;
+      text-align: center;
+      width:200%;
+      color:white
+      
+      }
+      .hometext button{
+        margin-left: 50%;
+  
+      }
+
+    }
+@media (min-width:632px) and (max-width:777px){
+    .home{
+        background-position: 100% 100%; 
+        display: flex;
+        justify-content: space-between;
+        text-shadow: 5px 5px 10px #030303;
+    }
+    .hometext{
+        width:100%;
+
+    }
+    .hometext h1{
+        font-size: 30px;
+        width:200%;
+        text-align: center;
+        color:white;
+     
+    }
+    
+    .hometext  p{
+    font-size: 18px;
+    text-align: center;
+    width:200%;
+    color:white
+    
+    }
+    .hometext button{
+      margin-left: 50%;
+
+    }
+
+}
+
+@media  (max-width:998px){
+  .hometext button{
+    margin-right: -50%;
+
+  }
+
+}

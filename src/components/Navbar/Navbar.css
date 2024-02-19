@@ -1,0 +1,68 @@
+
+.navbarrr .image{
+    display: flex;
+    align-items:flex-end;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 0.5px solid rgb(233, 229, 229);
+}
+.navbarrr .appbar{
+    padding: 0 25px !important;
+    background: hsl(0,0%,91%);
+}
+
+
+.navbarrr .items button{
+    color:hsl(94, 59%, 35%);
+    padding-right: 10px;
+    cursor: pointer;
+    font-weight:400;
+    font-size: 18px;
+    /* line-height: 20px;
+    align-items: center; */
+}
+.navbarrr .items button{
+    color:hsl(94, 59%, 35%);
+    padding-right: 10px;
+    cursor: pointer;
+    font-weight:400;
+    font-size: 18px;
+    /* line-height: 20px;
+    align-items: center; */
+}
+.navbarrr  .icon{
+    font-size: 30px;
+}
+.navbarrr .MuiPaper-root{
+    color:hsl(94, 59%, 35%)!important;
+    /* padding-right: 10px; */
+    cursor: pointer;
+    font-weight:900!important;
+    font-size: 30px;
+}
+.navbarrr .userNamee{
+    color:rgb(82, 142, 37) ;
+    font-size:17px;
+
+}
+.navbarrr a{
+    color:hsl(94, 59%, 35%)!important;
+    padding-left: 10px;
+    cursor: pointer;
+    font-weight:600!important;
+    font-size: 18px;
+    text-decoration-line: none;
+
+}
+
+.navbarrr a:hover{
+    text-shadow: 1px 10px 10px rgb(185, 209, 205) ;
+}
+.navbarrr .DrowList{
+        color:hsl(94, 59%, 35%)!important;
+
+}
+.css-1pqm26d-MuiAvatar-img{
+    border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+.users .contributTitle h1{
+    font-weight: bold;
+}
+.users .contributTitle button{
+    width: fit-content;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    background-color: hsl(94,59%,35%);
+    border-radius: 5px;
+    cursor: pointer;
+
+    color: white;
+}
+.users .contributTitle{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.MuiDataGrid-columnHeaderTitleContainer{
+    justify-content: center;
+}
+.MuiDataGrid-cell--textLeft{
+    justify-content: center!important;
+}

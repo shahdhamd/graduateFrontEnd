@@ -1,0 +1,22 @@
+.dataTable .dataDrid{
+   
+    padding: 25px;
+}
+
+ .MuiDataGrid-toolbarContainer{
+    flex-direction: row-reverse;
+}
+
+
+.edit .editIcon{
+    color: rgb(65, 109, 65);
+}
+
+.Delete  .DeleteIcon{
+    color: rgb(133, 46, 46);
+}
+
+
+.dataTable{
+    background-color: white;
+}

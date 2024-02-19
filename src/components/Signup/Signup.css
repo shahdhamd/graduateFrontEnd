@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.mss{
+    display: block;
+    color: var(--grayText);
+    padding: 10px;
+    font-weight: bold;
+  
+  }
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;;
+}
+.input2 {
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--inputColor);
+
+  border-radius: 10px;
+}
+
+:root{
+  --primaryColor:hsl(94,55%,56%);
+  --hoverColor:hsl(93,75%,76%);
+  --paleGreen:hsl(96,75%,89%);
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --grayText: hsl(0,0%,75%);
+  --bgColor:hsl(113,11%,85%);
+  --inputColor:hsl(330,12%,97%);
+
+  --biggestFontSize:2.5rem;
+  --h1FontSize:1.5rem;
+  --h2FontSize:1.25rem;
+  --h3FontSize:1rem;
+  --normalFontSize:.938rem;
+  --smallFontSize:.813rem;
+  
+}
+.flex{
+  display: flex;
+ align-items:center
+}
+.grid{
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+html{
+  font-size: 90%;
+
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.icon{
+  font-size: var(--h2FontSize);
+  cursor: pointer;
+}
+img,video{
+  height: auto;
+  width: 100%;
+}
+
+.message{
+  display: none;
+}
+
+
+.btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: .8rem 1rem;
+ color: var(--grayText);
+}
+.btn .icon{
+  margin-left: .5rem;
+}
+.btn :hover{
+color: var(--primaryColor);
+background-color: var(--paleGreen);
+}
+.formCard {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding: 15px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 7px 50px rgb(214, 223, 213);
+}
+.formCard .container {
+  height: 90vh;
+
+  width: 60%;
+  margin: auto;
+  padding: 0;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: hsl(0deg, 0%, 91%);
+}
+.formCard .container .videoDiv {
+  position: relative;
+  display: flex;
+  margin: 0!important;
+  flex-basis: 50%;
+  width: 70%;
+  height: 100%;
+  padding: 0 1.5rem;
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+  flex-direction: column;
+  /* margin: auto; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+.formCard .container .videoDiv .video, .formCard .container .videoDiv .footerDiv {
+  position: absolute;
+}
+ /* .formCard .container .videoDiv .footerDiv .loginbtn{
+color: var(--primaryColor);
+display: none;
+} */
+.formCard .container .videoDiv .video {
+  height: 100%;
+  margin: 0;
+     object-fit: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.formCard .container .videoDiv .textDiv {
+  position: relative;
+}
+.formCard .container .videoDiv .textDiv .title {
+  color: var(--whiteColor);
+  font-size: 35px;
+  font-weight: 800;
+}
+.formCard .container .videoDiv .textDiv p {
+  color: var(--whiteColor);
+  padding: 1rem;
+  font-weight: 400;
+}
+.formCard .container .videoDiv .footerDiv {
+  bottom: 10px;
+  padding: 0 1rem;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.248);
+  left: 10px;
+  right: 10px;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 10px;
+}
+.formCard .container .formDiv .form .alert {
+padding: 12px;
+}
+.formCard .container .formDiv .form .login .loginbtn{
+  color: var(--primaryColor);
+}
+.formCard .container .formDiv .form .login {
+display: none;
+direction: rtl;
+}
+.formCard .container .videoDiv .footerDiv .text {
+  color: var(--whiteColor);
+}
+.formCard .container .videoDiv .footerDiv .btn {
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+.formCard .container .videoDiv .footerDiv .btn:hover {
+  background-color: var(--hoverColor);
+}
+.formCard .container .formDiv {
+  flex-wrap: 50%;
+  margin: auto;
+  flex-direction: column;
+  /* gap: 1.5rem; */
+  /* gap:.5rem; */
+  transform: translateY(-1rem);
+}
+.formCard .container .formDiv .headerDiv {
+  text-align: center;
+  padding: .5rem 0;
+}
+.formCard .container .videoDiv .textDiv .title {
+font-size: 30px;
+}
+.formCard .container .formDiv .headerDiv .img {
+  width: 60px;
+  padding-bottom: 0.5rem;
+  height: 60px;
+  display: inline-block;
+}
+.formCard .container .formDiv .headerDiv h3 {
+  font-size: 20px;
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.formCard .container .formDiv .form {
+  gap: 0.5rem;
+}
+.formCard .container .formDiv .form .inputDiv .icon {
+  color: var(--grayText);
+}
+.formCard .container .formDiv .form .inputDiv .input1 {
+  background: none;
+  outline: none;
+  border: none;
+  width: 200px;
+  direction: rtl;
+}
+.formCard .container .formDiv .form .inputDiv label {
+  color: var(--blackColor);
+  font-weight: 400;
+  direction: rtl;
+  font-size: 14px;
+  padding: 0.5rem 0;
+  display: block;
+}
+.formCard .container .formDiv .form .inputDiv .input2 {
+  gap: 0.5rem;
+  padding: 1rem;
+  /* background: var(--primaryColor); */
+  border-radius: 10px;
+  /* direction: rtl; */
+}
+.formCard .container .formDiv .form .btn {
+  padding: 0.8rem;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  color: var(--whiteColor);
+  align-items: center;
+  padding: 7px;
+  margin: auto;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  gap: 0.5rem;
+  transition: 0.3 ease;
+}
+.formCard .container .formDiv .form .btn:hover {
+  background: var(--hoverColor);
+  color: var(--blackColor);
+}
+@media (max-width: 1291px) and (min-width: 992px){
+  .formCard .container {
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: hsl(0deg, 0%, 91%);
+  }
+  .formCard .container .videoDiv{
+
+    flex-basis:45%
+  }
+
+}
+@media (max-width: 992px ) and (min-width: 768px){
+  .formCard .container .formDiv .form .inputDiv .input1 {
+    background: none;
+    outline: none;
+    border: none;
+    width: 180px;
+  }
+  .formCard .container{
+    width: 80%;
+  }
+  .formCard .container {
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: hsl(0deg, 0%, 91%);
+  }
+
+  .formCard .container {
+    width: 70%;
+
+  }
+.formCard .container .formDiv .form .inputDiv label {
+  color: var(--blackColor);
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.formCard .container .formDiv .form .inputDiv .input2{
+  padding: .8rem;
+
+}
+
+}
+
+/* @media (max-width: 767px ) and (min-width: 576px){
+
+  .formCard .container .videoDiv{
+  display: none;
+  }
+} */
+@media (max-width: 767px) and (min-width: 576px){
+  .formCard .container{
+    height: fit-content;
+  }
+  .formCard .container .videoDiv{
+    display: none;
+
+  }
+
+  .formCard .container .formDiv .form .login {
+  display: block;
+  }
+
+  /* .formCard .container{
+    height: 96vh;
+  } */
+  .formCard .container .formDiv .form .inputDiv .input1 {
+    background: none;
+    outline: none;
+    border: none;
+    width: 270px;
+  }
+}
+@media (max-width: 576px) and (min-width: 474px){
+  .formCard .container{
+    height: fit-content;
+  }
+  .formCard .container .formDiv .form .alert{
+    padding: 10px;
+  }
+  .formCard .container .videoDiv{
+    display: none;
+
+  }
+  .formCard .container .formDiv .form .login {
+    display: block;
+    }
+  
+    .formCard .container .formDiv .headerDiv h3{
+      font-size: 17px;
+    }
+  .formCard .container .formDiv .headerDiv .img {
+    width: 40px;
+    padding-bottom: 0.5rem;
+    height: 40px;
+    display: inline-block;
+  }
+  .formCard .container .formDiv .form .login .text{
+    font-size: 12px;
+    }
+ 
+}
+
+@media (max-width: 474px) and (min-width: 363px){
+  .formCard .container .videoDiv{
+    display: none;
+
+  }
+  .formCard .container{
+    height: fit-content;
+  }
+  .formCard .container .formDiv .form .login {
+    display: block;
+    }
+  
+  .formCard .container .formDiv .headerDiv .img {
+    width: 40px;
+    padding-bottom: 0.5rem;
+    height: 40px;
+    display: inline-block;
+  }
+  .formCard .container .formDiv .headerDiv h3{
+    font-size: 17px;
+  }
+
+  .formCard .container .formDiv .form .inputDiv .input1 {
+    background: none;
+    outline: none;
+    border: none;
+    width: 200px;
+  }
+  .formCard .container {
+    width:80%;
+  }
+}
+
+@media (max-width: 363px) {
+  .formCard .container {
+    width:90%;
+  }
+  .formCard .container .formDiv .form .login {
+    display: block;
+    }
+    .formCard .container{
+      height: fit-content;
+    }
+  .formCard .container .videoDiv{
+    display: none;
+
+  }
+  .formCard .container .formDiv .headerDiv .img {
+    width: 30px;
+    padding-bottom: 0.5rem;
+    height: 30px;
+    display: inline-block;
+  }
+  .formCard .container .formDiv .headerDiv h3{
+    font-size: 15px;
+  }
+  .formCard .container .formDiv .form .inputDiv label{
+    font-size: 13px;
+  
+  }
+  .formCard .container .formDiv .form .inputDiv .input1 {
+    background: none;
+    outline: none;
+    border: none;
+    width: 90%;
+  }
+}
